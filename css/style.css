@@ -2,9 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base;
+/* @layer base; */
 
-@apply{
+/* @apply{
     .section-container{
         
     }
@@ -12,6 +12,6 @@
 
     }
     .button-container{
-        
+
     }
-}
+} */

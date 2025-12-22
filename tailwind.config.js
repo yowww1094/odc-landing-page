@@ -10,7 +10,7 @@ export default {
         "grayishBlue": "hsl(201, 11%, 66%)"
       },
       fontFamily:{
-        "Bai Jamjuree": []
+        'bai-jamjuree': ["Bai Jamjuree", ...defaultTheme.fontFamily.sans],
       }
     },
   },
