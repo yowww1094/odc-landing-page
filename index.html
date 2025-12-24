@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="/css/style.css">
     <title>Document</title>
     <link rel="stylesheet" href="./css/output.css">
 </head>
@@ -10,12 +12,45 @@
     <!-- <div class=" bg-red-500">
         <div class="">
             <img src="" alt="">
+
+    <!-- <div class="w-full h-screen flex flex-col justify-center items-center gap-4 bg-[url(/images/bg-header-desktop.png)] bg-no-repeat bg-contain sm:h-mx-5">
+        <div class="mb-3">
+            <img class="" src="./images/logo.svg" alt="">
         </div>
-        <div class="">A history of everything you copy</div>
-        <div class="">Clipboard allows you to track and organize everything you copy. <br> Instantly access your clipboard on all your devices.</div>
-        <div class="">
-            <button>Download for IOS</button>
-            <button>Download for Mac</button>
+        <h3 class="text-darkGrayishBlue font-bold text-[40px] text-center">A history of everything you copy</h3>
+        <p class="text-grayishBlue text-md text-center">Clipboard allows you to track and organize everything you copy. <br> Instantly access your clipboard on all your devices.</p>
+        <div class="flex flex-row gap-4 mt-4">
+            <button class="bg-strongCyan px-8 py-3 text-white rounded-full text-sm">Download for IOS</button>
+            <button class="bg-lightBlue px-8 py-3 text-white rounded-full text-sm">Download for Mac</button>
+        </div>
+    </div> -->
+
+    <!-- Added padding (px-6) and changed bg-contain to bg-cover for better mobile filling -->
+    <div class="w-full min-h-screen flex flex-col justify-center items-center gap-6 px-6 bg-[url(/images/bg-header-desktop.png)] bg-no-repeat bg-cover md:bg-contain">
+    
+        <div class="mb-4">
+            <img class="w-24 md:w-auto" src="./images/logo.svg" alt="Logo">
+        </div>
+
+        <!-- Responsive text: smaller on mobile, larger on desktop -->
+        <h3 class="text-darkGrayishBlue font-bold text-3xl md:text-[40px] text-center max-w-lg">
+            A history of everything you copy
+        </h3>
+
+        <p class="text-grayishBlue text-base md:text-md text-center max-w-md">
+            Clipboard allows you to track and organize everything you copy. 
+            <span class="hidden md:inline"><br></span> 
+            Instantly access your clipboard on all your devices.
+        </p>
+
+        <!-- Flex direction changes: column on mobile, row on desktop -->
+        <div class="flex flex-col md:flex-row gap-4 mt-6 w-full md:w-auto">
+            <button class="bg-strongCyan px-8 py-4 md:py-3 text-white rounded-full text-sm font-semibold ">
+                Download for iOS
+            </button>
+            <button class="bg-lightBlue  px-8 py-4 md:py-3 text-white rounded-full text-sm font-semibold">
+                Download for Mac
+            </button>
         </div>
     </div> -->
 
@@ -78,39 +113,78 @@
                 <p>Easily  your snippets by content , <br> category, web adrese, application , and <br> more </p>
             </div>
         </div>
-        <div>
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- footer par ziad -->
+
+<!-- Logos -->
+<div class="flex flex-wrap justify-center gap-10 m-10 md:gap-16">
+  <img src="/images/logo-google.png" class="h-8 md:h-10" alt="google">
+  <img src="/images/logo-hp.png" class="h-8 md:h-10" alt="hp">
+  <img src="/images/logo-microsoft.png" class="h-8 md:h-10" alt="microsoft">
+  <img src="/images/logo-hp.png" class="h-8 md:h-10" alt="hp">
+  <img src="/images/logo-vector-graphics.png" class="h-8 md:h-10" alt="vector">
+</div>
+
+<!-- Text section -->
+<div class="px-6">
+  <h1 class="text-center font-sans font-semibold text-gray-600 text-3xl md:text-4xl">
+    Clipboard for iOS and MacOS
+  </h1>
+
+  <p class="text-center font-semibold text-gray-400 mt-6 max-w-2xl mx-auto">
+    Available for free on the app Store, download for mac or iOS, sync with iCloud and
+    you’re ready to start adding to your clipboard
+  </p>
+
+  <div class="flex flex-col sm:flex-row justify-center gap-4 mt-6">
+    <button class="rounded-full bg-teal-500 text-white px-6 py-3">
+      Download for iOS
+    </button>
+    <button class="rounded-full bg-indigo-500 text-white px-6 py-3">
+      Download for Mac
+    </button>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="bg-gray-100 mt-12">
+  <div class="max-w-7xl mx-auto px-6 py-8 flex flex-col md:flex-row items-center gap-8 md:gap-0 md:justify-between">
+
+    <!-- Logo -->
+    <img src="/images/logo.svg" class="h-10" alt="Logo">
+
+    <!-- Links -->
+    <ul class="flex flex-col sm:flex-row gap-4 sm:gap-8 text-sm text-gray-500 text-center">
+      <li>FAQs</li>
+      <li>Contact Us</li>
+      <li>Privacy Policy</li>
+      <li>Press Kit</li>
+      <li>Install Guide</li>
+    </ul>
+
+    <!-- Social icons -->
+    <div class="flex gap-5">
+      <img src="/images/icon-facebook.svg" class="h-5" alt="facebook">
+      <img src="/images/icon-twitter.svg" class="h-5" alt="twitter">
+      <img src="/images/icon-instagram.svg" class="h-5" alt="instagram">
     </div>
-    <div>
-        <h1>Clipboard for iOS and MacOS</h1>
-        <p>Available for free on the app Store, download for mac or iOS, sync wth iCloud and <br> you re ready to start adding to your clipboard </p>
-        <div>
-            <button>Download for iOS</button>
-            <button>Download for Mac</button>
-        </div>
-    </div>
-    <div>
-        <div><img src="" alt=""></div>
-        <div>
-            <ul>
-                <li>FAQs</li>
-                <li>Contact Us</li>
-                <li>Privacy Policy </li>
-                <li>Press Kit</li>
-                <li>Press Kit</li>
-                <li>Instail Guide </li>
-            </ul>
-        </div>
-        <div>
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-        </div>
-    </div> -->
+
+  </div>
+</footer>
+
+
 </body>
 </html>

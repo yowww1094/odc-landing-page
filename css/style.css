@@ -2,12 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
-  .section-container {
-    @apply max-w-7xl mx-auto px-4;
-  }
+/* @layer base; */
 
-  .button-container {
-    @apply flex gap-4;
-  }
-}
+/* @apply{
+    .section-container{
+        
+    }
+    .section-content{
+
+    }
+    .button-container{
+
+    }
+} */
