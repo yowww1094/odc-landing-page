@@ -2,7 +2,7 @@
 export default {
  content: [
     "./index.html",
-    "./**/*.{html,js}"
+    "./*.{html,js}"
   ],  theme: {
     extend: {
       colors:{
@@ -12,7 +12,7 @@ export default {
         "grayishBlue": "hsl(201, 11%, 66%)"
       },
       fontFamily:{
-        'bai-jamjuree': ["Bai Jamjuree", ...defaultTheme.fontFamily.sans],
+        'bai-jamjuree': ["Bai Jamjuree"],
       }
     },
   },
