@@ -1,7 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./src/**/*.{html,js}"],
-  theme: {
+ content: [
+    "./index.html",
+    "./**/*.{html,js}"
+  ],  theme: {
     extend: {
       colors:{
         "strongCyan": "hsl(171, 66%, 44%)",
